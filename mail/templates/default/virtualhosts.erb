@@ -1,0 +1,9 @@
+<VirtualHost *:<%= @port %>
+     ServerAdmin <%= @serveradmin %>
+     ServerName  <%= @servername %>
+     DocumentRoot <%= @document_root %>/public.html
+     ErrorLog <%= @document_root %>/logs/error.log
+     <Directory <%= @document_root %>/public.html>
+             Require all granted
+      </Directory>
+</VirtualHost>
